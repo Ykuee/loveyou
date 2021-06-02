@@ -1,6 +1,6 @@
 # loveyou
 
-来源与此的java版本，定时发送html邮件：
+定时发送html邮件,来自于nodejs的版本灵感，用java重构并有部分改动
 
 https://juejin.cn/post/6844903783722401800
 
