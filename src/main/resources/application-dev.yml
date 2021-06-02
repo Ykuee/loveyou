@@ -1,0 +1,15 @@
+loveyou:
+  rainbowfart-url: https://chp.shadiao.app/api.php
+  weather-url: https://tianqi.moji.com/weather/china/beijing/haidian-district #北京海淀
+  weather-city: 北京-海淀
+  #weather-url: https://tianqi.moji.com/weather/china/gansu/xiahe-county #夏河县
+  #weather-city: 甘肃-夏河
+  one-url: http://wufazhuce.com/
+  template-name: email
+  start-date: 2019-03-23
+  cron: 0 35 10 * * *
+  real-note-file: ./realNote.txt
+mail:
+  domain: qq.com
+  from: ${spring.mail.username}
+  to: 22837482376295762932@qq.com

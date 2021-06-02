@@ -1,0 +1,51 @@
+spring :
+  # 环境 test|dev|uat|prod
+  profiles :
+    #引入其他配置文件，例如ftpHX 未配置文件application-dev.yml
+    active : dev
+  mail:
+    #用户名
+    username: ydkguhehe@qq.com
+    #密码
+    password: 2ttm2i5v7y2fhxtixqcvenghbehzgchn
+    #服务
+    host: smtp.qq.com
+    protocol: smtps
+    port: 465
+    properties:
+      mail:
+        default-encoding: UTF-8
+        smtp:
+          socketFactort:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+        auth: true          # 开启smtp协议验证
+  #热部署模块
+  devtools:
+    restart:
+      #热部署开关
+      enabled: true
+      #指定热部署的目录
+      additional-paths: src/main/java
+      #指定目录不更新
+      exclude: test/**
+  mvc:   #静态文件
+    static-path-pattern : /static/**
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+server :
+  port : 8080
+  servlet :
+    context-path : /loveyou
+  tomcat :
+    uri-encoding : UTF-8
+    max-connections: 200000
+    threads:
+      min-spare: 5
+      max: 128
+    max-http-form-post-size: 9000000
+logging:
+  level:
+    org.springframework.boot.autoconfigure: ERROR
